@@ -1,7 +1,5 @@
 ---
 tags: [Заметки]
-[[[example 2]]]
-[[[example]]
 ---
 
 # Ex Limbus
