@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "example.md",
             "mode": "source"
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "example.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "example.md"
               }
             }
           }
@@ -114,14 +114,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "example.md",
     "index.md",
+    "[example 2.md",
+    "test_folder/test2.md",
+    "faq.md",
     "test_folder/test.md",
     "test_folder/Untitled.md",
     "README.md",
-    "faq.md",
     "example 2.md",
-    "example.md",
-    "static/README.md",
-    "Untitled.md"
+    "static/README.md"
   ]
 }
