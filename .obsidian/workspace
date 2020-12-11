@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Пример цитаты.md",
+            "file": "docs/Diarium/2020-12-11.md",
             "mode": "source"
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Пример цитаты.md",
+                "file": "docs/Diarium/2020-12-11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Пример цитаты.md"
+                "file": "docs/Diarium/2020-12-11.md"
               }
             }
           }
@@ -114,15 +114,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "Пример цитаты.md",
-    "index.md",
-    "faq.md",
-    "example 2.md",
-    "Untitled.md",
-    "README.md",
-    "example.md",
-    "test_folder/test2.md",
-    "test_folder/test.md",
-    "[example 2.md"
+    "docs/Diarium/2020-12-11.md",
+    "docs/Fragmentum/Untitled.md",
+    "Templates/Фрагмент.md",
+    "docs/Meditation/Untitled.md",
+    "docs/Notas/Бедность прячет нищету.md",
+    "docs/Ключевые Слова.md",
+    "Templates/Untitled.md",
+    "Templates/Заметка.md",
+    "Templates/Ключевое Слово.md",
+    "docs/Notas/Untitled.md"
   ]
 }
