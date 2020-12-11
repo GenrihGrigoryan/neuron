@@ -3,4 +3,4 @@ tags:
 - artis
 ---
 # Moon
-![[d1.png]]
+![image](d1.png){.ui .big .centered .image}
