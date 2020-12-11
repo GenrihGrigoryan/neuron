@@ -40,13 +40,21 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#tag1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "d7449ae650f28067",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
             }
           }
         ]
@@ -77,6 +85,26 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "4680afecee349a1b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "5af1365483c98f1c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
           }
         ]
       }
@@ -87,11 +115,13 @@
   },
   "lastOpenFiles": [
     "index.md",
+    "test_folder/test.md",
+    "test_folder/Untitled.md",
+    "README.md",
     "faq.md",
     "example 2.md",
     "example.md",
     "static/README.md",
-    "README.md",
     "Untitled.md"
   ]
 }
