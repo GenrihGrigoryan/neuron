@@ -1,13 +1,13 @@
 ---
 tags: 
-	- commentarium
-	- notas
-	- fragmentum
-	- meditation
-	- diarium
-	- signum
-	- poetica
-	- verbum
+- commentarium
+- notas
+- fragmentum
+- meditation
+- diarium
+- signum
+- poetica
+- verbum
 ---
 
 # Источник
