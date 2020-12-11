@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "Пример цитаты.md",
             "mode": "source"
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Пример цитаты.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Пример цитаты.md"
               }
             }
           }
@@ -114,15 +114,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Пример цитаты.md",
     "index.md",
     "faq.md",
+    "example 2.md",
+    "Untitled.md",
+    "README.md",
     "example.md",
     "test_folder/test2.md",
     "test_folder/test.md",
-    "example 2.md",
-    "README.md",
-    "[example 2.md",
-    "test_folder/Untitled.md",
-    "static/README.md"
+    "[example 2.md"
   ]
 }
