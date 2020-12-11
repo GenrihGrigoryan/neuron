@@ -1,5 +1,5 @@
 ---
-tags: [commentarium], [notas], [fragmentum], [meditation], [diarium], [signum]
+tags: [commentarium], [notas], [fragmentum], [meditation], [diarium], [signum], [poetica], [verbum]
 ---
 
 # Источник
