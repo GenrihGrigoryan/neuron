@@ -9,7 +9,7 @@
 
 [[[z:zettels?tag=verbum&timeline]]]
 
-[[[[z:zettels?tag=notas&timeline]]]
+[[[z:zettels?tag=notas&timeline]]]
 
-[[[[z:zettels?tag=meditation&timeline]]]
+[[[z:zettels?tag=meditation&timeline]]]
 

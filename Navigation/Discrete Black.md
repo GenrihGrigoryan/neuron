@@ -5,6 +5,5 @@
 - [Telegram](https://t.me/discreteblack)
 - [VK](https://vk.com/discreteblack)
 
-[[[z:zettels?tag=artis/*&timeline]]]
+[[[z:zettels?tag=artis/*&timeline&grouped]]]
 
-[[z:tags?filter=**]]
