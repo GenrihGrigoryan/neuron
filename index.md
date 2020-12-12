@@ -4,13 +4,14 @@
 Тут собрано преимущественно вся моя деятельность: творчество, проекты, ссылки на социальные сети и ресурсы.
 
 ## Контакты
-* [Я в Telegram](https://t.me/GenrihGrigoryan)
-* [Я в VK](https://t.me/GenrihGrigoryan)
+* [Telegram](https://t.me/GenrihGrigoryan)
+* [VK](https://vk.com/GenrihGrigoryan)
+* [iamgenrih@gmail.com](mailto:iamgenrih@gmail.com)
 
 ## Проекты
-* [Discrete Black](https://t.me/GenrihGrigoryan) — Форма.
-* [Ex Limbus](https://t.me/GenrihGrigoryan) — Идея.
-* [[Библиотека]] — Источник.
+* [[Discrete Black]] — Форма.
+* [[Ex Limbus]] — Идея.
+* [[Библиотека]] — Созерцание.
 
 ## Навигация
 * [[Заметки]]
