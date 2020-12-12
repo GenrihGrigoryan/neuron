@@ -4,9 +4,9 @@
 Тут собрано преимущественно вся моя деятельность: творчество, проекты, ссылки на социальные сети и ресурсы.
 
 ## Контакты
-* [Telegram](https://t.me/GenrihGrigoryan)
-* [VK](https://vk.com/GenrihGrigoryan)
-* [iamgenrih@gmail.com](mailto:iamgenrih@gmail.com)
+* [Telegram: @genrihgrigoryan](https://t.me/GenrihGrigoryan)
+* [VK: @genrihgrigoryan](https://vk.com/GenrihGrigoryan)
+* [Mail: iamgenrih@gmail.com](mailto:iamgenrih@gmail.com)
 
 ## Проекты
 * [[Discrete Black]] — Форма.
