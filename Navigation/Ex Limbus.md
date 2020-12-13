@@ -13,16 +13,23 @@
 ### Описание
 Тут хранится информация о книгах, авторах и фрагментах.
 
-
-
 >#### Категории
->[[[Размышления]]] [[[Заметки]]] [[[Проза]]] [[[Поэтика]]]
-
-[[z:zettels?tag=poetica&timeline]]
-
-[[z:zettels?tag=fabula&timeline]]
+>- [[[Заметки]]]
+>- [[[Размышления]]]
+>- [[[Проза]]]
+>- [[[Поэтика]]]
 
 [[z:zettels?tag=notas&timeline]]
 
 [[z:zettels?tag=meditation&timeline]]
+
+[[z:zettels?tag=fabula&timeline]]
+
+[[z:zettels?tag=poetica&timeline]]
+
+
+
+
+
+
 
