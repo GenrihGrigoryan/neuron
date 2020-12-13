@@ -20,7 +20,7 @@
 <ul>
 <li><a href = "https://google.com" ><i class="fab fa-vk fa-lg"></i> @genrihgrigoryan</a></li>
 <li><a href = "https://google.com"><i class="fab fa-telegram-plane fa-lg"></i> @genrihgrigoryan</a></li>
-<li><a href = "mailto:iamgengih@gmail.com"><i class="fab fa-twitter fa-lg"></i> iamgengih@gmail.com</a></li>
+<li><a href = "mailto:iamgengih@gmail.com"><i class="fas fa-envelope"></i> iamgengih@gmail.com</a></li>
 </ul>
 ```
 
