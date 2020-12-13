@@ -9,7 +9,7 @@
 
 [[z:zettels?tag=poetica&timeline]]
 
-[[z:zettels?tag=verbum&timeline]]
+[[z:zettels?tag=fabula&timeline]]
 
 [[z:zettels?tag=notas&timeline]]
 
