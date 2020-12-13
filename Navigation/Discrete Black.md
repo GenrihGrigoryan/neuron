@@ -1,9 +1,16 @@
 # Discrete Black
-Тут хранится информация о книгах, авторах и фрагментах.
+``` {=html}
+<div style="margin:1em auto; font-size: 18px; text-align:center; padding: 0px;">
 
-### Ссылки
-- [Telegram](https://t.me/discreteblack)
-- [VK](https://vk.com/discreteblack)
+<span style = "padding:10px;"><a href = "https://google.com" ><i class="fab fa-vk fa-lg"></i></a></span>
+<span style = "padding:10px;"><a href = "https://google.com"><i class="fab fa-telegram-plane fa-lg"></i></a></span>
+<span style = "padding:10px;"><a href = "https://google.com"><i class="fab fa-twitter fa-lg"></i></a></span>
+
+</div>
+```
+
+### Описание
+Тут хранится информация о книгах, авторах и фрагментах.
 
 [[[z:zettels?tag=artis/*&timeline&grouped]]]
 
