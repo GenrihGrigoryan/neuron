@@ -24,6 +24,14 @@
 </ul>
 ```
 
+ ```{=html}
+ <br>
+```
 
-[[z:zettels?tag=historia&timeline]]
+:::{.ui .floating .message}
+### Обновления
+[[z:zettels?tag=**&timeline&limit=10]]
+:::
+
+
 
