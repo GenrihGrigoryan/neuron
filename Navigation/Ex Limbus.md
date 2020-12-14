@@ -12,16 +12,19 @@
 Тут хранится информация о книгах, авторах и фрагментах.
 
 >### [[[Проза]]]
->[[z:zettels?tag=fabula&timeline]]
+>[[z:zettels?tag=exlimbus/fabula&timeline]]
 
 >### [[[Поэтика]]]
->[[z:zettels?tag=poetica&timeline]]
+>[[z:zettels?tag=exlimbus/poetica&timeline]]
 
 >### [[[Размышления]]]
->[[z:zettels?tag=meditation&timeline]]
+>[[z:zettels?tag=exlimbus/meditation&timeline]]
 
 >### [[[Заметки]]]
->[[z:zettels?tag=notas&timeline]]
+>[[z:zettels?tag=exlimbus/notas&timeline]]
+
+>### [[[Черновики]]]
+>[[z:zettels?tag=exlimbus/draft&timeline]]
 
 
 

@@ -1,6 +1,6 @@
 ---
 tags: 
-- commentarium
+- lib/commentarium
 ---
 # [c-e1-f1]
 >Источник: [[[e1-f1]]]

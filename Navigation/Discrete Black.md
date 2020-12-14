@@ -10,5 +10,5 @@
 ### Описание
 Тут хранится информация о книгах, авторах и фрагментах.
 
-[[[z:zettels?tag=artis/*&timeline&grouped]]]
+[[[z:zettels?tag=discreteblack/*&timeline&grouped]]]
 
