@@ -39,7 +39,7 @@
 >### [[Библиотека]]
 >[[z:zettels?tag=lib/*&timeline&limit=5]]
 
->### [[Хроника]]
+>### [[Navigation/Subpages/Хроника]]
 >[[z:zettels?tag=historia&timeline&limit=5]]
 
 
