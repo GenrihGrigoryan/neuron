@@ -1,18 +1,39 @@
 # Начало
 ``` {=html}
 <div  style="margin:1em auto; font-size: 16px; text-align:center;">
-<span style = "padding:5px;"><a href = "https://google.com" >VK</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">Telegram</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">Twitter</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">Mail</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">Patreon</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">Facebook</a></span>
-<span style = "padding:5px;"><a href = "https://google.com">LinkedIn</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-vk"> </i>
+VK</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-telegram"> </i>
+Telegram</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-twitter"> </i>
+Twitter</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fas fa-at"> </i>
+Mail</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-patreon"> </i>
+Patreon</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-facebook"> </i>
+Facebook</a></span>
+
+<span style = "padding:5px;"><a href = "https://google.com">
+<i class="fab fa-linkedin"> </i>
+LinkedIn</a></span>
 </div>
 ```
 ### Описание
 Мое имя **Генрих**, я занимаюсь программированием, философией и искусством.
-
+<i class="fab fa-vk"> </i>
 Раньше, создавал мобильные ==**[игры](<https://badmangames.com>)**== – являюсь автором ==**[Last Light](search.html?tag=verbum)**==, ==**[Skid Rally](search.html?tag=verbum)**==, ==**[Cyber Gun Flip](search.html?tag=verbum)**==.
 
 В настоящее время, подготавливаюсь к разработке *совершенного* приложения для организации информации.
