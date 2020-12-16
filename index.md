@@ -41,6 +41,3 @@
 
 >### [[Хроника]]
 >[[z:zettels?tag=historia&timeline&limit=5]]
-
-
-

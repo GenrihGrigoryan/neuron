@@ -2,4 +2,4 @@
 tags:
 - lib/personality
 ---
-# Платон
+# Platon
