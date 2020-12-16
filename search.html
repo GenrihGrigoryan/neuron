@@ -2,6 +2,12 @@
 <link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" />
 <style type="text/css">
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body{background-color:#ebebeb !important; font-family: "Inter" !important}
 
 body .ui.text.container { max-width: 768px; width = 768px; }
@@ -16,9 +22,9 @@ body div.z-index p.info{color:#808080}
 body div.z-index ul{list-style-type:square;padding-left:1.5em}    
 body div.z-index .uplinks{margin-left:0.29999em}
 
-body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px; font-weight: 1200;}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#0050A0; padding: 3px}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff; background-color:#0050A0; padding: 3px; border-radius: 6px}
+body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px;}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#004080; padding: 3px}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff; background-color:#004080; padding: 3px; border-radius: 6px}
 body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:#1b1c1d !important}
 body div#neuron-theme-default-black div#footnotes{border-top-color:#1b1c1d}
 body p{line-height:150%}
@@ -27,15 +33,25 @@ body .deemphasized{font-size:0.95em}
 body .deemphasized:hover{opacity:1}
 body .deemphasized:not(:hover){opacity:0.69999}
 body .deemphasized:not(:hover) a{color:#808080 !important} 
-body div.zettel-view {}
+
+/*  body div.zettel-view {} */
+
 body div.zettel-view ul{padding-left:1.5em; list-style-type: disc;}   
 body div.zettel-view .pandoc .highlight{background-color:#ebebeb; padding: 2px 4px; border-radius: 8px}
 body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em; vertical-align:middle}
 body div.zettel-view .zettel-content .metadata{margin-top:1em}
 body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}
-body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em; text-align:center; font-weight: bolder;} 
+body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em; text-align:center; } 
 
 hr, body .hr {border:none; background:#ebebeb; height:1px;}
+
+h1 {font-weight: 750;}
+h2 {font-weight: 700;}
+h3 {font-weight: 600;}
+h4 {font-weight: 500;}
+h5 {font-weight: 400;}
+h6 {font-weight: 300;}
+
 
 body div.zettel-view .zettel-content h2{border-bottom:solid 1px #ebebeb; padding-bottom: 4px; margin-bottom:0.25em }
 body div.zettel-view .zettel-content h3, h4, h5, h6 {margin: 0.2em 0px 0.2em 0px; padding-bottom: 4px; padding-top: 0px; }
@@ -80,8 +96,25 @@ body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-tran
 body .ui.label.zettel-tag{color:#000000}
 body .ui.label.zettel-tag a{color:#000000}
 
-body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #fafafa; font-size: 1.1rem; box-shadow: 0 0 5px 5px rgba(160, 160, 160, 0.05); border-radius: 12px 12px 0px 0px; border: 0px; padding: 2.5em}  /* #fafafa */
-body nav.backlinks-container{background-color:#ebebeb !important; border: 1px !important; border-radius: 0 0 12px 12px !important; box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; padding: 2.5em !important}
+body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #fafafa; font-size: 1.1rem; box-shadow: 0 0 8px 2px rgba(160, 160, 160, 0.15); border-radius: 16px 16px 0px 0px; border: 0px; padding: 2em}  /* #fafafa */
+body nav.backlinks-container{background-color:#fafafa !important; border-radius: 0 0 16px 16px !important;  padding: 2em !important} /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
+
+.ui.attached:not(.message)+.ui.attached.segment:not(.top) {
+    border-top: .5px solid #cccccc;
+    }
+
+body .ui.attached.segment {   
+    border-top: .5px solid #cccccc;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid; 
+    border: .5px solid #cccccc; 
+    box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.1);
+}
+
+body .deemphasized:not(:hover) {
+    opacity: .75;
+    }
 
 @media only screen and (max-width: 768px){
 body .ui.raised.raised.segment, .ui.raised.raised.segments,
@@ -126,11 +159,13 @@ body .ui.floating.message {background-color: #ffffff; box-shadow: 0 1px 2px 0px 
 
 <!--<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans|Roboto+Mono&amp;display=swap" rel="stylesheet" />-->
 
-
+<!--
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Inter&family=Noto+Sans&family=Noto+Serif&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+-->
+
 </head>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search.html" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index.html" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"Discrete_Black","day":null,"id":"Discrete Black","title":"Discrete Black","tags":[]},{"slug":"Ex_Limbus","day":null,"id":"Ex Limbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"c-e1-f1","day":null,"id":"c-e1-f1","title":"[c-e1-f1]","tags":["lib/commentarium"]},{"slug":"c-e2","day":null,"id":"c-e2","title":"[c-e2] Диалоги","tags":["lib/commentarium"]},{"slug":"e1-f1","day":null,"id":"e1-f1","title":"[e2-f1] О Душе","tags":["lib/fragmentum"]},{"slug":"e2-f1","day":null,"id":"e2-f1","title":"[e1-f2] Постановка вопроса об общности жен 3","tags":["lib/fragmentum"]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство-Платон","day":null,"id":"Государство-Платон","title":"[e1] Государство","tags":["lib/ex"]},{"slug":"Диалоги-Платон","day":null,"id":"Диалоги-Платон","title":"[e2] Диалоги","tags":["lib/ex"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Платон","day":null,"id":"Платон","title":"Платон","tags":["lib/personality"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search.html" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index.html" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"Discrete_Black","day":null,"id":"Discrete Black","title":"Discrete Black","tags":[]},{"slug":"Ex_Limbus","day":null,"id":"Ex Limbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"Platon","day":null,"id":"Platon","title":"Platon","tags":["lib/personality"]},{"slug":"c-e1-f1","day":null,"id":"c-e1-f1","title":"[c-e1-f1]","tags":["lib/commentarium"]},{"slug":"c-e2","day":null,"id":"c-e2","title":"[c-e2] Диалоги","tags":["lib/commentarium"]},{"slug":"e1-f1","day":null,"id":"e1-f1","title":"[e2-f1] О Душе","tags":["lib/fragmentum"]},{"slug":"e2-f1","day":null,"id":"e2-f1","title":"[e1-f2] Постановка вопроса об общности жен 3","tags":["lib/fragmentum"]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство-Платон","day":null,"id":"Государство-Платон","title":"[e1] Государство - z:/Platon","tags":["lib/ex"]},{"slug":"Диалоги-Платон","day":null,"id":"Диалоги-Платон","title":"[e2] Диалоги","tags":["lib/ex"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
   selectedTags = [];
 
 let searchResults = document.getElementById("search-results"); // ul element

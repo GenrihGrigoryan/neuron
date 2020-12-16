@@ -2,6 +2,12 @@
 <link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" />
 <style type="text/css">
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body{background-color:#ebebeb !important; font-family: "Inter" !important}
 
 body .ui.text.container { max-width: 768px; width = 768px; }
@@ -16,9 +22,9 @@ body div.z-index p.info{color:#808080}
 body div.z-index ul{list-style-type:square;padding-left:1.5em}    
 body div.z-index .uplinks{margin-left:0.29999em}
 
-body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px; font-weight: 1200;}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#0050A0; padding: 3px}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff; background-color:#0050A0; padding: 3px; border-radius: 6px}
+body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px;}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#004080; padding: 3px}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff; background-color:#004080; padding: 3px; border-radius: 6px}
 body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:#1b1c1d !important}
 body div#neuron-theme-default-black div#footnotes{border-top-color:#1b1c1d}
 body p{line-height:150%}
@@ -27,15 +33,25 @@ body .deemphasized{font-size:0.95em}
 body .deemphasized:hover{opacity:1}
 body .deemphasized:not(:hover){opacity:0.69999}
 body .deemphasized:not(:hover) a{color:#808080 !important} 
-body div.zettel-view {}
+
+/*  body div.zettel-view {} */
+
 body div.zettel-view ul{padding-left:1.5em; list-style-type: disc;}   
 body div.zettel-view .pandoc .highlight{background-color:#ebebeb; padding: 2px 4px; border-radius: 8px}
 body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em; vertical-align:middle}
 body div.zettel-view .zettel-content .metadata{margin-top:1em}
 body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}
-body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em; text-align:center; font-weight: bolder;} 
+body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em; text-align:center; } 
 
 hr, body .hr {border:none; background:#ebebeb; height:1px;}
+
+h1 {font-weight: 750;}
+h2 {font-weight: 700;}
+h3 {font-weight: 600;}
+h4 {font-weight: 500;}
+h5 {font-weight: 400;}
+h6 {font-weight: 300;}
+
 
 body div.zettel-view .zettel-content h2{border-bottom:solid 1px #ebebeb; padding-bottom: 4px; margin-bottom:0.25em }
 body div.zettel-view .zettel-content h3, h4, h5, h6 {margin: 0.2em 0px 0.2em 0px; padding-bottom: 4px; padding-top: 0px; }
@@ -80,8 +96,25 @@ body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-tran
 body .ui.label.zettel-tag{color:#000000}
 body .ui.label.zettel-tag a{color:#000000}
 
-body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #fafafa; font-size: 1.1rem; box-shadow: 0 0 5px 5px rgba(160, 160, 160, 0.05); border-radius: 12px 12px 0px 0px; border: 0px; padding: 2.5em}  /* #fafafa */
-body nav.backlinks-container{background-color:#ebebeb !important; border: 1px !important; border-radius: 0 0 12px 12px !important; box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; padding: 2.5em !important}
+body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #fafafa; font-size: 1.1rem; box-shadow: 0 0 8px 2px rgba(160, 160, 160, 0.15); border-radius: 16px 16px 0px 0px; border: 0px; padding: 2em}  /* #fafafa */
+body nav.backlinks-container{background-color:#fafafa !important; border-radius: 0 0 16px 16px !important;  padding: 2em !important} /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
+
+.ui.attached:not(.message)+.ui.attached.segment:not(.top) {
+    border-top: .5px solid #cccccc;
+    }
+
+body .ui.attached.segment {   
+    border-top: .5px solid #cccccc;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid; 
+    border: .5px solid #cccccc; 
+    box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.1);
+}
+
+body .deemphasized:not(:hover) {
+    opacity: .75;
+    }
 
 @media only screen and (max-width: 768px){
 body .ui.raised.raised.segment, .ui.raised.raised.segments,
@@ -126,9 +159,11 @@ body .ui.floating.message {background-color: #ffffff; box-shadow: 0 1px 2px 0px 
 
 <!--<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans|Roboto+Mono&amp;display=swap" rel="stylesheet" />-->
 
-
+<!--
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Inter&family=Noto+Sans&family=Noto+Serif&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+-->
+
 </head>
 <meta content="z:zettels?tag=exlimbus/notas&amp;timeline&amp;type=branch
 " name="description" /><link href="https://genrihgrigoryan.com/%d0%97%d0%b0%d0%bc%d0%b5%d1%82%d0%ba%d0%b8.html" rel="canonical" /><meta content="Заметки" property="og:title" /><meta content="Genrih Grigoryan" property="og:site_name" /><meta content="article" property="og:type" /><script type="application/ld+json">[{"@context":"https://schema.org","itemListElement":[{"name":"Ex Limbus","item":"https://genrihgrigoryan.com/Ex_Limbus.html","@type":"ListItem","position":1}],"@type":"BreadcrumbList"}]</script><style type="text/css">pre > code.sourceCode { white-space: pre; position: relative; }
