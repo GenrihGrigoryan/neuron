@@ -45,7 +45,7 @@
 
 >### [[DiscreteBlack]]
 >Визуальное творчество, образы. <p/>
->[[Abstract]]|[[Shape]]
+>Abstract|Shape
 
 
 
