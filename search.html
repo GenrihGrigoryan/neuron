@@ -177,100 +177,197 @@ body .ui.floating.message {background-color: #ffffff; box-shadow: 0 1px 2px 0px 
 
 </head>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search.html" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index.html" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"DiscreteBlack","day":null,"id":"DiscreteBlack","title":"Discrete Black","tags":[]},{"slug":"ExLimbus","day":null,"id":"ExLimbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"Untitled","day":["2020-12-17",null],"id":"Untitled","title":"Untitled","tags":["historia"]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство.1","day":null,"id":"Государство.1","title":"Государство [1]. Об общности жен и детей","tags":["lib/fragmentum"]},{"slug":"Государство.1.Комментарий","day":null,"id":"Государство.1.Комментарий","title":"Диалоги [1]. Комментарий","tags":["lib/commentarium"]},{"slug":"Государство.2","day":null,"id":"Государство.2","title":"Государство [2]. О стражах","tags":["lib/fragmentum"]},{"slug":"Государство.Рецензия","day":null,"id":"Государство.Рецензия","title":"Диалоги. Рецензия","tags":["lib/commentarium"]},{"slug":"Диалоги.1","day":null,"id":"Диалоги.1","title":"Диалоги [1]. О справедливом государственном устройстве","tags":["lib/fragmentum"]},{"slug":"Диалоги.1.Комментарий","day":null,"id":"Диалоги.1.Комментарий","title":"Диалоги [2]. Комментарий","tags":["lib/commentarium"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Платон","day":null,"id":"Платон","title":"Платон","tags":["lib/personality"]},{"slug":"Платон.Государство","day":null,"id":"Платон.Государство","title":"Государство","tags":["lib/ex"]},{"slug":"Платон.Диалоги","day":null,"id":"Платон.Диалоги","title":"Диалоги","tags":["lib/ex"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"DiscreteBlack","day":null,"id":"DiscreteBlack","title":"Discrete Black","tags":[]},{"slug":"ExLimbus","day":null,"id":"ExLimbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"Untitled","day":["2020-12-17",null],"id":"Untitled","title":"Untitled","tags":["historia"]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство.1","day":null,"id":"Государство.1","title":"Государство [1]. Об общности жен и детей","tags":["lib/fragmentum"]},{"slug":"Государство.1.Комментарий","day":null,"id":"Государство.1.Комментарий","title":"Диалоги [1]. Комментарий","tags":["lib/commentarium"]},{"slug":"Государство.2","day":null,"id":"Государство.2","title":"Государство [2]. О стражах","tags":["lib/fragmentum"]},{"slug":"Государство.Рецензия","day":null,"id":"Государство.Рецензия","title":"Диалоги. Рецензия","tags":["lib/commentarium"]},{"slug":"Диалоги.1","day":null,"id":"Диалоги.1","title":"Диалоги [1]. О справедливом государственном устройстве","tags":["lib/fragmentum"]},{"slug":"Диалоги.1.Комментарий","day":null,"id":"Диалоги.1.Комментарий","title":"Диалоги [2]. Комментарий","tags":["lib/commentarium"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Платон","day":null,"id":"Платон","title":"Платон","tags":["lib/personality"]},{"slug":"Платон.Государство","day":null,"id":"Платон.Государство","title":"Государство","tags":["lib/ex"]},{"slug":"Платон.Диалоги","day":null,"id":"Платон.Диалоги","title":"Диалоги","tags":["lib/ex"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
+  selectedTags = [];
   selectedTags = [];
 
+
 let searchResults = document.getElementById("search-results"); // ul element
+let searchResults = document.getElementById("search-results"); // ul element
+let searchInput = document.getElementById("search-input");
 let searchInput = document.getElementById("search-input");
 
 
+
+
+// Create a zettel link from a zettel object
 // Create a zettel link from a zettel object
 function makeZettelLink(zettel) {
+function makeZettelLink(zettel) {
+  let container = document.createElement("span");
   let container = document.createElement("span");
   container.classList.add("zettel-link-container");
+  container.classList.add("zettel-link-container");
+
 
   let zettelLink = document.createElement("span");
+  let zettelLink = document.createElement("span");
+  zettelLink.classList.add("zettel-link");
   zettelLink.classList.add("zettel-link");
 
+
+  let actualLink = document.createElement("a");
   let actualLink = document.createElement("a");
   actualLink.href = (zettel.slug || zettel.id.replaceAll(" ", "_")) + ".html";
+  actualLink.href = (zettel.slug || zettel.id.replaceAll(" ", "_")) + "";
+  actualLink.innerHTML = zettel.title;
   actualLink.innerHTML = zettel.title;
 
+
+  zettelLink.appendChild(actualLink);
   zettelLink.appendChild(actualLink);
   container.appendChild(zettelLink);
+  container.appendChild(zettelLink);
+
 
   return container;
+  return container;
 }
+}
+
 
 // Renders the results as a list
+// Renders the results as a list
+function renderResults(results) {
 function renderResults(results) {
   searchResults.innerHTML = "";
+  searchResults.innerHTML = "";
+
 
   for (var i = 0, length = results.length; i < length; i++) {
+  for (var i = 0, length = results.length; i < length; i++) {
+    let zettel = results[i];
     let zettel = results[i];
     let result = document.createElement("li");
+    let result = document.createElement("li");
+    let zettelLink = makeZettelLink(zettel);
     let zettelLink = makeZettelLink(zettel);
     result.appendChild(zettelLink);
+    result.appendChild(zettelLink);
+    searchResults.appendChild(result);
     searchResults.appendChild(result);
   }
+  }
 }
+}
+
 
 // Rebuild the search, eventually useful for advanced search
+// Rebuild the search, eventually useful for advanced search
+function rebuildSearchIndex() {
 function rebuildSearchIndex() {
   search = new JsSearch.Search("id");
+  search = new JsSearch.Search("id");
+  search.tokenizer = new JsSearch.StopWordsTokenizer(
   search.tokenizer = new JsSearch.StopWordsTokenizer(
     new JsSearch.SimpleTokenizer()
+    new JsSearch.SimpleTokenizer()
+  );
   );
   search.indexStrategy = new JsSearch.AllSubstringsIndexStrategy();
+  search.indexStrategy = new JsSearch.AllSubstringsIndexStrategy();
+  search.addIndex("id");
   search.addIndex("id");
   search.addIndex("title");
+  search.addIndex("title");
+  search.addIndex("tags");
   search.addIndex("tags");
   search.addDocuments(index.zettels);
+  search.addDocuments(index.zettels);
 }
+}
+
 
 function matchSelectedTags(zettel) {
+function matchSelectedTags(zettel) {
+  return selectedTags.every((tag) => {
   return selectedTags.every((tag) => {
     return zettel.tags.includes(tag);
+    return zettel.tags.includes(tag);
+  });
   });
 }
+}
+
 
 // Runs and renders the search
+// Runs and renders the search
+function runSearch() {
 function runSearch() {
   let query = searchInput.value;
+  let query = searchInput.value;
+  let results;
   let results;
   if (query == "") {
+  if (query == "") {
+    results = index.zettels;
     results = index.zettels;
   } else {
+  } else {
+    results = search.search(query);
     results = search.search(query);
   }
+  }
+  results = results.filter(matchSelectedTags);
   results = results.filter(matchSelectedTags);
   renderResults(results);
+  renderResults(results);
 }
+}
+
 
 // Initialize selected tags
+// Initialize selected tags
+function initializeTags() {
 function initializeTags() {
   $('#search-tags').dropdown('set selected', selectedTags);
+  $('#search-tags').dropdown('set selected', selectedTags);
 }
+}
+
 
 // Initialize variables with URL parameters
+// Initialize variables with URL parameters
+function initializeSearchFromURL() {
 function initializeSearchFromURL() {
   let url = new URL(window.location.href);
+  let url = new URL(window.location.href);
+  let searchParams = new URLSearchParams(url.search);
   let searchParams = new URLSearchParams(url.search);
   searchInput.value = searchParams.get("q");
+  searchInput.value = searchParams.get("q");
+  selectedTags = searchParams.getAll("tag");
   selectedTags = searchParams.getAll("tag");
   initializeTags();
+  initializeTags();
+  runSearch();
   runSearch();
 }
+}
+
 
 rebuildSearchIndex();
+rebuildSearchIndex();
+initializeSearchFromURL();
 initializeSearchFromURL();
 
+
+$('#search-input').on("change paste keyup", runSearch)
 $('#search-input').on("change paste keyup", runSearch)
   .focus();
+  .focus();
+
 
 $('#search-tags').dropdown({
+$('#search-tags').dropdown({
+  onChange: (value) => {
   onChange: (value) => {
     selectedTags = value.split(',').filter((tag) => tag != "");
+    selectedTags = value.split(',').filter((tag) => tag != "");
+    runSearch();
     runSearch();
   }
+  }
 });
-</script><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.1.12.0" /></a></div></div></div></div></body></html>
+});
+</script><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.1.12.0" /></a></div></div></div></div></body></html></script><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.1.12.0" /></a></div></div></div></div></body></html>
