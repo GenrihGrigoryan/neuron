@@ -10,11 +10,11 @@ html { font-family: 'Inter', sans-serif; }
 
 body{background-color:#ffffff !important; color: rgb(0,0,0,0.8) !important; font-family: "Inter" !important}
 
-body .ui.text.container { max-width: 768px; width = 768px; }
+body .ui.text.container { max-width: 768px; width: 768px; }
 
 body .ui.container{font-family:"Inter" !important}
 body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Inter" !important}  
-body code, pre, tt, .monoFont{font-family:"Noto Sans" } 
+body code, pre, tt, .monoFont{font-family:"Inter" !important} 
 
 /* "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important} */
 
@@ -23,7 +23,7 @@ body div.z-index ul{list-style-type:square;padding-left:1.5em}
 body div.z-index .uplinks{margin-left:0.29999em}
 
 body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px;}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color: rgb(0,0,0,0.8); padding: 0px; text-decoration:  underline;}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color: rgb(0,0,0,0.8); padding: 0px; text-decoration:  underline; text-decoration-style: solid; text-decoration-thickness: 0.75px}
 body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color: rgb(0,0,0,0.8); background-color: transparent; padding: 0px; text-decoration:  none;}
 body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:rgb(0,0,0,0.8) !important}
 body div#neuron-theme-default-black div#footnotes{border-top-color:rgb(0,0,0,0.8)}
@@ -76,7 +76,7 @@ body div.zettel-view .zettel-content blockquote {
     /* margin: 10px 0px 10px 0px; */
     padding: 0.5em 15px 0.5em 14px;
     border-radius: 6px;
-    margin: 1em 0px 1.5em -16px;
+    margin: 1em 0px 1.5em 0px;
     }
 
 ul {margin-block-start: 0.5em; margin-block-end: 0.5em;}
@@ -110,8 +110,8 @@ body .tree ul ul::before {
     border-left: solid 0px #cccccc;
 }
 
-body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.1rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 0px 0px 1em 0em;}  /* #fafafa */
-body nav.backlinks-container{background-color:#ffffff !important; border-radius: 0 0 16px 16px !important;  padding: 0px !important; padding-top: 2em !important; } /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
+body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.2rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 0px 0px 0em 0em;}  /* #fafafa */
+body nav.backlinks-container{background-color:#ffffff !important; border-radius: 0 0 16px 16px !important; /* padding: 0px !important; padding-top: 2em !important; */ } /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
 
 .ui.attached:not(.message)+.ui.attached.segment:not(.top) {
     border-top: 1px solid #ebebeb;
@@ -134,8 +134,14 @@ body .deemphasized:not(:hover) {
 body .ui.raised.raised.segment, .ui.raised.raised.segments,
 body nav.backlinks-container
     {
-        padding: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+      /*  padding: 0px !important; padding-top: 2em !important; */
     }
+}
+
+.ui.segment{
+    padding: 2em 1em;
 }
 
 p {
