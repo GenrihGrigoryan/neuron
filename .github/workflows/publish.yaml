@@ -23,13 +23,14 @@ jobs:
     - name: Build neuron site 🔧
       run: |
         ./neuron -d $PWD rib
-    - name: Rename html
+    - name: Setup Py
       uses: actions/setup-python@v2
       with:
         python-version: 3.8.1
         architecture: 'x64'
         token: ${{ secrets.GITHUB_TOKEN }}
-      run: python zettel_update.py 3.8.1
+    - name: Run Py
+        run: python zettel_update.py 3.8.1
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
