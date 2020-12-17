@@ -1,6 +1,6 @@
 import os
 
-files = os.listdir("/.neuron/output/")
+files = os.listdir(".neuron/output/")
 
 html = []
 
