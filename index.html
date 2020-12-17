@@ -23,16 +23,16 @@ body div.z-index ul{list-style-type:square;padding-left:1.5em}
 body div.z-index .uplinks{margin-left:0.29999em}
 
 body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px;}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color:#004080; padding: 3px}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color:#ffffff; background-color:#004080; padding: 3px; border-radius: 6px}
-body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:#1b1c1d !important}
-body div#neuron-theme-default-black div#footnotes{border-top-color:#1b1c1d}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color: rgb(0,0,0,0.8); padding: 0px; text-decoration:  underline;}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color: rgb(0,0,0,0.8); background-color: transparent; padding: 0px; text-decoration:  none;}
+body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:rgb(0,0,0,0.8) !important}
+body div#neuron-theme-default-black div#footnotes{border-top-color:rgb(0,0,0,0.8)}
 body p{line-height:150%}
 body img{max-width:100%}
 body .deemphasized{font-size:0.95em}
 body .deemphasized:hover{opacity:1}
 body .deemphasized:not(:hover){opacity:1}
-body .deemphasized:not(:hover) a{color:#808080 !important} 
+body .deemphasized:not(:hover) a{color: rgb(0,0,0,0.8) !important}
 
 /*  body div.zettel-view {} */
 
@@ -40,7 +40,7 @@ body div.zettel-view ul{padding-left:1.5em; list-style-type: disc;}
 body div.zettel-view .pandoc .highlight{background-color:#ebebeb; padding: 2px 4px; border-radius: 8px}
 body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em; vertical-align:middle}
 body div.zettel-view .zettel-content .metadata{margin-top:1em}
-body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}
+body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080; display: none;}
 body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em; text-align:center; } 
 
 hr, body .hr {border:none; background:#ebebeb; height:1px;}
@@ -68,7 +68,16 @@ body div.zettel-view .zettel-content dl dt{font-weight:bold}
 
 
 /* body div.zettel-view .zettel-content blockquote{background-color:#ebebeb;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px; border-radius: 8px} */
-body div.zettel-view .zettel-content blockquote {background-color: #ffffff; border-left:solid 4px #ebebeb; margin: 10px 0px 10px 0px; padding:0.5em 15px 0.5em 15px; box-shadow: 0 0px 2px 0px rgba(20, 20, 20, 0.15); border-radius: 8px;}
+
+body div.zettel-view .zettel-content blockquote {
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    border-left: solid 4px #ebebeb;
+    /* margin: 10px 0px 10px 0px; */
+    padding: 0.5em 15px 0.5em 14px;
+    border-radius: 6px;
+    margin: 1em 0px 1.5em -16px;
+    }
 
 ul {margin-block-start: 0.5em; margin-block-end: 0.5em;}
 
@@ -91,16 +100,21 @@ body .tree li:first-child::after{border-radius:5px 0px 0px 0px}
 body .tree li:last-child::after{border-style:none;border-width:0px}
 body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}
 body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}
-body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}
+body .tree li div.forest-link{border:solid 1px #ebebeb;padding:0.4em 0.4em 0.4em 0.4em; display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}
+body .tree li div.forest-link a {text-decoration:none !important;}
 body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}
 body .ui.label.zettel-tag{color:#000000}
 body .ui.label.zettel-tag a{color:#000000}
 
-body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.1rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 2em}  /* #fafafa */
-body nav.backlinks-container{background-color:#ffffff !important; border-radius: 0 0 16px 16px !important;  padding: 2em !important} /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
+body .tree ul ul::before {
+    border-left: solid 0px #cccccc;
+}
+
+body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.1rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 0px 0px 1em 0em;}  /* #fafafa */
+body nav.backlinks-container{background-color:#ffffff !important; border-radius: 0 0 16px 16px !important;  padding: 0px !important; padding-top: 2em !important; } /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
 
 .ui.attached:not(.message)+.ui.attached.segment:not(.top) {
-    border-top: .5px solid #cccccc;
+    border-top: 1px solid #ebebeb;
     }
 
 body .ui.attached.segment {   
@@ -120,7 +134,7 @@ body .deemphasized:not(:hover) {
 body .ui.raised.raised.segment, .ui.raised.raised.segments,
 body nav.backlinks-container
     {
-        padding: 1em
+        padding: 1em;
     }
 }
 
@@ -259,7 +273,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <h3 id="описание">Описание</h3><p>Мое имя <strong>Генрих</strong>, я занимаюсь программированием, философией и искусством. Раньше, создавал мобильные <span class="highlight"><strong><a href="https://badmangames.com">игры</a></strong></span> – являюсь автором <span class="highlight"><strong><a href="search.html?tag=verbum">Last Light</a></strong></span>, <span class="highlight"><strong><a href="search.html?tag=verbum">Skid Rally</a></strong></span>, <span class="highlight"><strong><a href="search.html?tag=verbum">Cyber Gun Flip</a></strong></span>.</p><p>В настоящее время, подготавливаюсь к разработке <em>совершенного</em> приложения для организации информации.</p><hr /><br/>
 <h3 id="навигация">Навигация</h3><p>На данном ресурсе агрегирована преимущественно вся моя публичная деятельность.</p><p>Можно воспользоваться <span class="highlight"><strong><a href="search.html?tag=verbum">ключевыми словами</a></strong></span> для быстрого поиска темы, либо перейти в разделы и выбрать интересующее направление.</p><br/>	
-<p>Пример</p><blockquote><h3 id="zexlimbus"><span class="zettel-link-container cf"><span class="zettel-link"><a href="ExLimbus">Ex Limbus</a></span></span></h3><p>Все, что связано с умозрительными образами и смыслами. <p/> <span class="zettel-link-container cf"><span class="zettel-link"><a href="Заметки">Заметки</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Размышления">Размышления</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Проза">Проза</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Поэтика">Поэтика</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Черновики">Черновики</a></span></span></p></blockquote><blockquote><h3 id="zd091d0b8d0b1d0bbd0b8d0bed182d0b5d0bad0b0"><span class="zettel-link-container cf"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span></h3><p>Медленное чтение.<p/> <span class="zettel-link-container cf"><span class="zettel-link"><a href="Авторы">Авторы</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Источники">Источники</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Комментарии">Комментарии</a></span></span></p></blockquote><blockquote><h3 id="zdiscreteblack"><span class="zettel-link-container cf"><span class="zettel-link"><a href="DiscreteBlack">Discrete Black</a></span></span></h3><p>Визуальное творчество, образы. <p/> Abstract|Shape</p></blockquote><!--Идеи. **==[Заметки](Заметки.html)==, ==[Размышления](Размышления.html)==, ==[Рассказы](Проза.html)==,  ==[Стихи](Заметки.html)==, ==[Черновики](Черновики.html)==** - все, что связано с умозрительными образами и смыслами.
+<blockquote><h3 id="zexlimbus"><span class="zettel-link-container cf"><span class="zettel-link"><a href="ExLimbus">Ex Limbus</a></span></span></h3><p>Все, что связано с умозрительными образами и смыслами. <p/> <span class="zettel-link-container cf"><span class="zettel-link"><a href="Заметки">Заметки</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Размышления">Размышления</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Проза">Проза</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Поэтика">Поэтика</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Черновики">Черновики</a></span></span></p></blockquote><blockquote><h3 id="zd091d0b8d0b1d0bbd0b8d0bed182d0b5d0bad0b0"><span class="zettel-link-container cf"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span></h3><p>Медленное чтение.<p/> <span class="zettel-link-container cf"><span class="zettel-link"><a href="Авторы">Авторы</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Источники">Источники</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a></span></span>|<span class="zettel-link-container cf"><span class="zettel-link"><a href="Комментарии">Комментарии</a></span></span></p></blockquote><blockquote><h3 id="zdiscreteblack"><span class="zettel-link-container cf"><span class="zettel-link"><a href="DiscreteBlack">Discrete Black</a></span></span></h3><p>Визуальное творчество, образы. <p/> Abstract|Shape</p></blockquote><!--Идеи. **==[Заметки](Заметки.html)==, ==[Размышления](Размышления.html)==, ==[Рассказы](Проза.html)==,  ==[Стихи](Заметки.html)==, ==[Черновики](Черновики.html)==** - все, что связано с умозрительными образами и смыслами.
  >[[z:zettels?tag=exlimbus/*&timeline&limit=5]] 
 
 <br></br>
