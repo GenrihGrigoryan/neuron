@@ -16,5 +16,5 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - run: python my_script.py
+    - run: python zettel_update.py
      
