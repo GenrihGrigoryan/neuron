@@ -22,13 +22,10 @@ for hf in html:
     for line in rf:
         templine = line
         if '<h3 class="ui header">Backlinks</h3>' in line:
-            templine = line.replace('<h3 class="ui header">Backlinks</h3>', '<h3 class="ui header">Упоминания</h3>')
-        #elif 'rel="canonical"' in  line:
-        #    new_file_content += line.replace(".html", "")
-        if '.html"' in line:                    #'zettel-link' in line:
-            templine = line.replace('.html"', '"')
-        #else:
-        #   new_file_content += line
+            templine = templine.replace('<h3 class="ui header">Backlinks</h3>', '<h3 class="ui header">Упоминания</h3>')
+        if '.html"' in line:
+            templine = templine.replace('.html"', '"')
+
         new_file_content += templine
 
     rf.close()
