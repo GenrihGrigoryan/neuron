@@ -28,7 +28,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - name: Install dependencies
+    - name: Run rename
       run: python zettel_update.py
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
