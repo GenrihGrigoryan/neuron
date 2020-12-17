@@ -23,14 +23,12 @@ jobs:
     - name: Build neuron site 🔧
       run: |
         ./neuron -d $PWD rib
-      
- 
-    - uses: actions/setup-python@v2
     - name: Rename html
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
     - run: python zettel_update.py
-        
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
