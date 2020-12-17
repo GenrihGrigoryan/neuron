@@ -2,19 +2,51 @@
 <link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" />
 <style type="text/css">
 
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+*/
+
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
+
+
+html { font-family: "Inter", sans-serif; }
 
 body{background-color:#ffffff !important; color: rgb(0,0,0,0.8) !important; font-family: "Inter" !important}
 
 body .ui.text.container { max-width: 768px; width: 768px; }
 
-body .ui.container{font-family:"Inter" !important}
+body .ui.container{font-family: "Inter" !important}
 body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Inter" !important}  
-body code, pre, tt, .monoFont{font-family:"Inter" !important} 
+body code, pre, tt, .monoFont{font-family: "Inter" !important} 
+
+h3 [class = "ui header"] {
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+}
+
+.ui.header {
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+}
+
+span [class = "extra monoFont"] {
+    display: none;
+}
 
 /* "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important} */
 
@@ -23,7 +55,7 @@ body div.z-index ul{list-style-type:square;padding-left:1.5em}
 body div.z-index .uplinks{margin-left:0.29999em}
 
 body div#neuron-theme-default-black .zettel-content h1{background-color: transparent; border-radius: 8px; padding: 12px;}
-body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color: rgb(0,0,0,0.8); padding: 0px; text-decoration:  underline; text-decoration-style: solid; text-decoration-thickness: 0.75px}
+body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a{color: rgb(0,0,0,0.8); padding: 0px; text-decoration:  underline; text-decoration-style: solid; text-decoration-thickness: .75px}
 body div#neuron-theme-default-black span.zettel-link-container span.zettel-link a:hover{color: rgb(0,0,0,0.8); background-color: transparent; padding: 0px; text-decoration:  none;}
 body div#neuron-theme-default-black .deemphasized:hover div.item a:hover{color:rgb(0,0,0,0.8) !important}
 body div#neuron-theme-default-black div#footnotes{border-top-color:rgb(0,0,0,0.8)}
@@ -36,8 +68,22 @@ body .deemphasized:not(:hover) a{color: rgb(0,0,0,0.8) !important}
 
 /*  body div.zettel-view {} */
 
+.ui.black.segment.segment.segment.segment.segment:not(.inverted) {
+    padding: 1em 1em;
+    border: 1px solid #ebebeb !important;
+    border-top: 3px solid rgb(0,0,0,0.8) !important;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+div [class="z-index"] p {display: none;}
+
+.ui.piled.segment, .ui.piled.segments {
+    display: none;
+}
+
 body div.zettel-view ul{padding-left:1.5em; list-style-type: disc;}   
-body div.zettel-view .pandoc .highlight{background-color:#ebebeb; padding: 2px 4px; border-radius: 8px}
+body div.zettel-view .pandoc .highlight{background-color:#ebebeb; padding: 2.5px 5px; border-radius: 8px}
 body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em; vertical-align:middle}
 body div.zettel-view .zettel-content .metadata{margin-top:1em}
 body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080; display: none;}
@@ -53,7 +99,7 @@ h5 {font-weight: 400;}
 h6 {font-weight: 300;}
 
 
-body div.zettel-view .zettel-content h2{border-bottom:solid 1px #ebebeb; padding-bottom: 4px; margin-bottom:0.25em }
+body div.zettel-view .zettel-content h2{border-bottom:solid 0px #ebebeb; padding-bottom: 4px; margin-bottom:0.25em }
 body div.zettel-view .zettel-content h3, h4, h5, h6 {margin: 0.2em 0px 0.2em 0px; padding-bottom: 4px; padding-top: 0px; }
 /* body div.zettel-view .zettel-content h4{opacity:0.8} */
 body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:1em}
@@ -68,6 +114,12 @@ body div.zettel-view .zettel-content dl dt{font-weight:bold}
 
 
 /* body div.zettel-view .zettel-content blockquote{background-color:#ebebeb;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px; border-radius: 8px} */
+a {
+    color: #1662a8;
+}
+a:hover{
+    color: #11508a;
+}
 
 body div.zettel-view .zettel-content blockquote {
     background-color: #ffffff;
@@ -110,7 +162,7 @@ body .tree ul ul::before {
     border-left: solid 0px #cccccc;
 }
 
-body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.2rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 0px 0px 0em 0em;}  /* #fafafa */
+body .ui.raised.raised.segment, .ui.raised.raised.segments {background: #ffffff; font-size: 1.2rem; box-shadow: none; border-radius: 16px 16px 0px 0px; border: 0px; padding: 0px 0px .5em 0em;}  /* #fafafa */
 body nav.backlinks-container{background-color:#ffffff !important; border-radius: 0 0 16px 16px !important; /* padding: 0px !important; padding-top: 2em !important; */ } /* box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.15) !important; */
 
 .ui.attached:not(.message)+.ui.attached.segment:not(.top) {
@@ -130,9 +182,14 @@ body .deemphasized:not(:hover) {
     opacity: 1;
     }
 
+.ui.segment{
+    padding: 2em 0em; 
+}
+
 @media only screen and (max-width: 768px){
 body .ui.raised.raised.segment, .ui.raised.raised.segments,
-body nav.backlinks-container
+body nav.backlinks-container,
+.ui.segment
     {
         padding-left: 1em;
         padding-right: 1em;
@@ -140,12 +197,19 @@ body nav.backlinks-container
     }
 }
 
-.ui.segment{
-    padding: 2em 1em;
+
+
+body p {
+    margin: 0 0 0.5em; 
+    line-height: 160%;
 }
 
-p {
-    margin: 0 0 0.5em;
+body .join {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body span.zettel-link-container.errors {
@@ -159,12 +223,13 @@ body .ui.horizontal.divider {height: 0px !important; margin: 0px; display: none;
 
 .ui[class*="bottom pointing"].label, .ui[class*="pointing below"].label {margin-bottom: 0em;}
 
+div[class="ui center aligned container footer-version"] {visibility: hidden;}
 
 .ui.pointing.label:before { visibility: hidden; }
 
 body ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}
 body ul.context-list > li{list-style-type:circle}
-body span.zettel-link-container span.zettel-link a{font-weight:bold;text-decoration:none}
+body span.zettel-link-container span.zettel-link a{font-weight:inherit !important; text-decoration:none}
 body span.zettel-link-container span.extra{color:auto}
 body span.zettel-link-container.errors{border:solid 1px #ff0000}
 body [data-tooltip]:after{font-size:0.8em}
@@ -196,7 +261,7 @@ body .ui.floating.message {background-color: #ffffff; box-shadow: 0 1px 2px 0px 
 -->
 
 </head>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"DiscreteBlack","day":null,"id":"DiscreteBlack","title":"Discrete Black","tags":[]},{"slug":"ExLimbus","day":null,"id":"ExLimbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"Untitled","day":["2020-12-17",null],"id":"Untitled","title":"Untitled","tags":["historia"]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство.1","day":null,"id":"Государство.1","title":"Государство [1]. Об общности жен и детей","tags":["lib/fragmentum"]},{"slug":"Государство.1.Комментарий","day":null,"id":"Государство.1.Комментарий","title":"Диалоги [1]. Комментарий","tags":["lib/commentarium"]},{"slug":"Государство.2","day":null,"id":"Государство.2","title":"Государство [2]. О стражах","tags":["lib/fragmentum"]},{"slug":"Государство.Рецензия","day":null,"id":"Государство.Рецензия","title":"Диалоги. Рецензия","tags":["lib/commentarium"]},{"slug":"Диалоги.1","day":null,"id":"Диалоги.1","title":"Диалоги [1]. О справедливом государственном устройстве","tags":["lib/fragmentum"]},{"slug":"Диалоги.1.Комментарий","day":null,"id":"Диалоги.1.Комментарий","title":"Диалоги [2]. Комментарий","tags":["lib/commentarium"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Платон","day":null,"id":"Платон","title":"Платон","tags":["lib/personality"]},{"slug":"Платон.Государство","day":null,"id":"Платон.Государство","title":"Государство","tags":["lib/ex"]},{"slug":"Платон.Диалоги","day":null,"id":"Платон.Диалоги","title":"Диалоги","tags":["lib/ex"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-search@2.0.0/dist/umd/js-search.min.js"></script></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><div class="ui text container"><h1 class="header">Search</h1><div class="ui fluid icon input search"><input id="search-input" type="text" /><i class="search icon fas fa-search"></i></div><div class="ui hidden divider"></div><div class="ui fluid multiple search selection dropdown" id="search-tags"><input name="tags" type="hidden" /><i class="dropdown icon"></i><div class="default text">Select tags…</div><div class="menu"><div class="item">discreteblack/abstract</div><div class="item">exlimbus/fabula</div><div class="item">exlimbus/meditation</div><div class="item">exlimbus/notas</div><div class="item">historia</div><div class="item">lib/commentarium</div><div class="item">lib/ex</div><div class="item">lib/fragmentum</div><div class="item">lib/personality</div><div class="item">verbum</div></div></div><div class="ui divider"></div><ul class="zettel-list" id="search-results"></ul><script>let index = {"zettels":[{"slug":"DiscreteBlack","day":null,"id":"DiscreteBlack","title":"Discrete Black","tags":[]},{"slug":"ExLimbus","day":null,"id":"ExLimbus","title":"Ex Limbus","tags":[]},{"slug":"Horror_Face","day":["2020-12-15",null],"id":"Horror Face","title":"Horror Face","tags":["discreteblack/abstract"]},{"slug":"Untitled","day":["2020-12-17",null],"id":"Untitled","title":"Untitled","tags":["historia"]},{"slug":"db.Абстракция","day":null,"id":"db.Абстракция","title":"Абстракция","tags":[]},{"slug":"db.Символ","day":null,"id":"db.Символ","title":"Символ","tags":[]},{"slug":"db.Форма","day":null,"id":"db.Форма","title":"Форма","tags":[]},{"slug":"index","day":null,"id":"index","title":"Начало","tags":[]},{"slug":"Авторы","day":null,"id":"Авторы","title":"Авторы","tags":[]},{"slug":"Апплодисменты","day":["2020-12-14",null],"id":"Апплодисменты","title":"Апплодисменты","tags":["exlimbus/fabula"]},{"slug":"Бедность","day":null,"id":"Бедность","title":"Бедность","tags":["verbum"]},{"slug":"Бедность_прячет_нищету","day":null,"id":"Бедность прячет нищету","title":"Бедность прячет нищету.","tags":["exlimbus/notas"]},{"slug":"Библиотека","day":null,"id":"Библиотека","title":"Библиотека","tags":[]},{"slug":"Богатство","day":null,"id":"Богатство","title":"Богатство","tags":["verbum"]},{"slug":"Государство.1","day":null,"id":"Государство.1","title":"Государство [1]. Об общности жен и детей","tags":["lib/fragmentum"]},{"slug":"Государство.1.Комментарий","day":null,"id":"Государство.1.Комментарий","title":"Диалоги [1]. Комментарий","tags":["lib/commentarium"]},{"slug":"Государство.2","day":null,"id":"Государство.2","title":"Государство [2]. О стражах","tags":["lib/fragmentum"]},{"slug":"Государство.Рецензия","day":null,"id":"Государство.Рецензия","title":"Диалоги. Рецензия","tags":["lib/commentarium"]},{"slug":"Диалоги.1","day":null,"id":"Диалоги.1","title":"Диалоги [1]. О справедливом государственном устройстве","tags":["lib/fragmentum"]},{"slug":"Диалоги.1.Комментарий","day":null,"id":"Диалоги.1.Комментарий","title":"Диалоги [2]. Комментарий","tags":["lib/commentarium"]},{"slug":"Добро","day":null,"id":"Добро","title":"Добро","tags":["verbum"]},{"slug":"Душа","day":null,"id":"Душа","title":"Душа","tags":["verbum"]},{"slug":"Женщина_как_проявление_свободы","day":null,"id":"Женщина как проявление свободы","title":"Женщина как проявление свободы","tags":["exlimbus/meditation"]},{"slug":"Заметки","day":null,"id":"Заметки","title":"Заметки","tags":[]},{"slug":"Зло","day":null,"id":"Зло","title":"Зло","tags":["verbum"]},{"slug":"Изобилие","day":null,"id":"Изобилие","title":"Изобилие","tags":["verbum"]},{"slug":"Источники","day":null,"id":"Источники","title":"Источники","tags":[]},{"slug":"Ключевые_Слова","day":null,"id":"Ключевые Слова","title":"Ключевые Слова","tags":[]},{"slug":"Комментарии","day":null,"id":"Комментарии","title":"Комментарии","tags":[]},{"slug":"Нищета","day":null,"id":"Нищета","title":"Нищета","tags":["verbum"]},{"slug":"Первая_запись","day":["2020-12-16",null],"id":"Первая запись","title":"Первая запись","tags":["historia"]},{"slug":"Платон","day":null,"id":"Платон","title":"Платон","tags":["lib/personality"]},{"slug":"Платон.Государство","day":null,"id":"Платон.Государство","title":"Государство","tags":["lib/ex"]},{"slug":"Платон.Диалоги","day":null,"id":"Платон.Диалоги","title":"Диалоги","tags":["lib/ex"]},{"slug":"Политика","day":null,"id":"Политика","title":"Политика","tags":["verbum"]},{"slug":"Порядок","day":null,"id":"Порядок","title":"Порядок","tags":["verbum"]},{"slug":"Поэтика","day":null,"id":"Поэтика","title":"Поэтика","tags":[]},{"slug":"Преступление","day":null,"id":"Преступление","title":"Преступление","tags":["verbum"]},{"slug":"Преступление_говорит_о_человеке_больше,_чем_причина_этого_преступления","day":null,"id":"Преступление говорит о человеке больше, чем причина этого преступления","title":"Преступление говорит о человеке больше, чем причина этого преступления.","tags":["exlimbus/notas"]},{"slug":"Проза","day":null,"id":"Проза","title":"Проза","tags":[]},{"slug":"Размышления","day":null,"id":"Размышления","title":"Размышления","tags":[]},{"slug":"Скупость","day":null,"id":"Скупость","title":"Скупость","tags":["verbum"]},{"slug":"Справедливость","day":null,"id":"Справедливость","title":"Справедливость","tags":["verbum"]},{"slug":"Фрагменты","day":null,"id":"Фрагменты","title":"Фрагменты","tags":[]},{"slug":"Хаос","day":null,"id":"Хаос","title":"Хаос","tags":["verbum"]},{"slug":"Хроника","day":null,"id":"Хроника","title":"Хроника","tags":[]},{"slug":"Человек","day":null,"id":"Человек","title":"Человек","tags":["verbum"]},{"slug":"Черновики","day":null,"id":"Черновики","title":"Черновики","tags":[]}],"tags":["discreteblack/abstract","exlimbus/fabula","exlimbus/meditation","exlimbus/notas","historia","lib/commentarium","lib/ex","lib/fragmentum","lib/personality","verbum"]};</script><script>let search = "",
   selectedTags = [];
 
 let searchResults = document.getElementById("search-results"); // ul element
