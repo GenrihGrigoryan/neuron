@@ -26,7 +26,7 @@ jobs:
     - name: Rename html
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: 3.9.1
         run: python zettel_update.py
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
