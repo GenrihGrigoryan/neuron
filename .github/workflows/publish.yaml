@@ -25,12 +25,12 @@ jobs:
         ./neuron -d $PWD rib
     - name: Setup Py
       uses: actions/setup-python@v2
-      with:
+    - name: Run Py
+        with:
         python-version: 3.8.1
         architecture: 'x64'
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Run Py
-        run: python zettel_update.py 3.8.1
+          run: python zettel_update.py 3.8.1
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
