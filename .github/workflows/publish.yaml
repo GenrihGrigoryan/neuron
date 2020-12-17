@@ -24,9 +24,9 @@ jobs:
       run: |
         ./neuron -d $PWD rib
       
-    - name: Rename html
-    - uses: actions/checkout@v2
+ 
     - uses: actions/setup-python@v2
+    - name: Rename html
       with:
         python-version: ${{ matrix.python-version }}
     - run: python zettel_update.py
