@@ -1,1 +1,13 @@
 .neuron
+.github
+.nojekyll
+
+*.html
+*.py
+*.dhal
+*.png
+*.jpeg
+*.jpg
+
+index.md
+Navigation
