@@ -1,6 +1,5 @@
 .neuron
-.github
-.nojekyll
+.github/
 
 *.html
 *.py
@@ -10,4 +9,4 @@
 *.jpg
 
 index.md
-Navigation
+Navigation/
