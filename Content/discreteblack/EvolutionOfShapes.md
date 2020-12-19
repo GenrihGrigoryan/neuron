@@ -3,7 +3,7 @@ date: 2020-12-15
 tags:
 - discreteblack/abstract
 ---
-# Horror Face
+# Evolution of Shapes
 ![](static/1.png){.join}
 ![](static/2.png){.join}
 ![](static/3.png){.join}
