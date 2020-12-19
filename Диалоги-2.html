@@ -18,6 +18,9 @@
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 
 @import url('https://rsms.me/inter/inter.css');
@@ -26,13 +29,20 @@
   html {font-family: "JetBrains Mono var" monospace;} 
 }
 
-html { font-family: "Inter", sans-serif; }
+html { font-family: "Inter", sans-serif !important; }
 
-body{background-color:#ffffff !important; color: rgb(0,0,0,0.8) !important; font-family: "Inter" !important}
+body{background-color:#ffffff !important; color: rgb(0,0,0,0.8) !important; font-family: "Inter", !important;}
 
-body .ui.text.container { max-width: 768px; width: 768px; }
+/* body .ui.text.container { max-width: 768px; width: 768px; } */
 
-body .ui.container{font-family: "Inter" !important}
+body .ui.container {font-family: "PT Serif" !important; }
+
+body .forest-link {
+    font-family:"Inter" !important;
+}
+
+.serif { font-family: "PT Serif", serif, !important; } 
+
 body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Inter" !important} 
 
 body code, pre, tt, .monoFont{
@@ -165,11 +175,15 @@ body .tree li:first-child::after{border-radius:5px 0px 0px 0px}
 body .tree li:last-child::after{border-style:none;border-width:0px}
 body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}
 body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}
-body .tree li div.forest-link{border:solid 1px #f0f0f0;padding:0.4em 0.4em 0.4em 0.4em; display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}
+body .tree li div.forest-link{ border:solid 1px #f0f0f0;padding:0.4em 0.4em 0.4em 0.4em; display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}
 body .tree li div.forest-link a {text-decoration:none !important;}
 body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}
 body .ui.label.zettel-tag{color:#000000}
 body .ui.label.zettel-tag a{color:#000000}
+
+body li {
+    margin:0 5px 5px 0;
+}
 
 body .tree ul ul::before {
     border-left: solid 0px #cccccc;
@@ -214,7 +228,7 @@ body nav.backlinks-container,
 
 body p {
     margin: 0 0 0.5em; 
-    line-height: 160%;
+    line-height: 162%;
 }
 
 body .join {
@@ -336,4 +350,5 @@ code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
 code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><nav class="flipped tree deemphasized" id="zettel-uptree" style="transform-origin: 50%"><ul class="root"><li><ul><li><div class="forest-link"><span class="zettel-link-container"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a></span></span></div><ul><li><div class="forest-link"><span class="zettel-link-container"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span></div></li></ul></li></ul></li></ul></nav><div class="ui text container" id="zettel-container" style="position: relative"><div id="zettel-container-anchor" style="position: absolute; top: -24px; left: 0"></div><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="диалоги-1---о-справедливом-государственном-устройстве">Диалоги [1] - О справедливом государственном устройстве</h1><blockquote><p><strong>Источик:</strong> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: lib/ex"><a href="Платон-Диалоги">Диалоги</a></span></span></p></blockquote><p>Да, но правильность этого, как и в других случаях, нуждается в объяснении, каким образом осуществляется подобная общность – ведь это может быть по-разному. Так что непременно укажи, какой именно путь ты имеешь в виду. Мы давно уже ожидаем, что ты упомянешь о деторождении – о том, как будут рождать детей, а родив, воспитывать – и вообще об этой, как ты говоришь, общности детей и жен. Правильно, {{Справедливость | CGH}} ли это происходит или нет – имеет, считаем мы, огромное, даже решающее значение для государственного устройства.</p><blockquote><p><strong>Ключевые слова:</strong> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Справедливость">Справедливость</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Человек">Человек</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Политика">Политика</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Душа">Душа</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Справедливость">Справедливость</a></span></span></p></blockquote></div></article><nav class="ui bottom attached segment deemphasized backlinks-container"><h3 class="ui header">Упоминания</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc">Linking by tag: <code>lib/*</code></div></li></ul></li><li><span class="zettel-link-container folgezettel"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a><span data-nosnippet=""><sup title="Branching link (folgezettel)">ᛦ</sup></span></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc">Linking by tag: <code>lib/fragmentum</code></div></li></ul></li></ul><a class="ui basic label zettel-tag" href="search.html?tag=lib/fragmentum" title="See all zettels tagged &#39;lib/fragmentum&#39;">lib/fragmentum</a></nav></div></div><script>if (window.scrollY == 0) { document.getElementById("zettel-container-anchor").scrollIntoView({behavior: "smooth", block: "start"}); }</script><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron" /></a></div></div></div></body></html>
+</style></head><body><div class="ui fluid container" id="neuron-theme-default-black"><nav class="top-menu"><div class="ui inverted compact neuron icon menu black"><a class="left item" href="." title="Home"><i class="home icon"></i></a><a class="left item" href="search" title="Search Zettels"><i class="search icon"></i></a><a class="right item" href="z-index" title="All Zettels (z-index)"><i class="tree icon"></i></a></div></nav><nav class="flipped tree deemphasized" id="zettel-uptree" style="transform-origin: 50%"><ul class="root"><li><ul><li><div class="forest-link"><span class="zettel-link-container"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a></span></span></div><ul><li><div class="forest-link"><span class="zettel-link-container"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span></div></li></ul></li></ul></li></ul></nav><div class="ui text container" id="zettel-container" style="position: relative"><div id="zettel-container-anchor" style="position: absolute; top: -24px; left: 0"></div><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="диалоги-1---о-справедливом-государственном-устройстве">Диалоги [1] - О справедливом государственном устройстве</h1><blockquote><p><strong>Источик:</strong> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: lib/ex"><a href="Платон-Диалоги">Диалоги</a></span></span></p></blockquote><p class = "serif">Да, но правильность этого, как и в других случаях, нуждается в объяснении, каким образом осуществляется подобная общность – ведь это может быть по-разному. Так что непременно укажи, какой именно путь ты имеешь в виду.    Мы давно уже ожидаем, что ты упомянешь о деторождении – о том, как будут рождать детей, а родив, воспитывать – и вообще об этой, как ты говоришь, общности детей и жен. Правильно, ли это происходит или нет – имеет, считаем мы, огромное, даже решающее значение для государственного устройства.</p>
+<blockquote><p><strong>Ключевые слова:</strong> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Справедливость">Справедливость</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Человек">Человек</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Политика">Политика</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Душа">Душа</a></span></span> <span class="zettel-link-container cf"><span class="zettel-link" data-inverted="" data-position="right center" data-tooltip="Tags: verbum"><a href="Справедливость">Справедливость</a></span></span></p></blockquote></div></article><nav class="ui bottom attached segment deemphasized backlinks-container"><h3 class="ui header">Упоминания</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Библиотека">Библиотека</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc">Linking by tag: <code>lib/*</code></div></li></ul></li><li><span class="zettel-link-container folgezettel"><span class="zettel-link"><a href="Фрагменты">Фрагменты</a><span data-nosnippet=""><sup title="Branching link (folgezettel)">ᛦ</sup></span></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc">Linking by tag: <code>lib/fragmentum</code></div></li></ul></li></ul><a class="ui basic label zettel-tag" href="search.html?tag=lib/fragmentum" title="See all zettels tagged &#39;lib/fragmentum&#39;">lib/fragmentum</a></nav></div></div><script>if (window.scrollY == 0) { document.getElementById("zettel-container-anchor").scrollIntoView({behavior: "smooth", block: "start"}); }</script><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron" /></a></div></div></div></body></html>
